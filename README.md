@@ -62,8 +62,8 @@ daquela parte da página.
 Pré-requisitos: [Node.js](https://nodejs.org) instalado.
 
 ```bash
-git clone <url-do-repositorio>
-cd vitrine-doces
+git clone https://github.com/joaopcalumby/SonhoBrigadeiro-vitrine.git
+cd SonhoBrigadeiro-vitrine
 npm install
 npm start
 ```
