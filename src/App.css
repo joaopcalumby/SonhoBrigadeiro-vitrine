@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Bakerie';
+  src: url('./fonts/bakerie-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
   --marrom: #A57548;
   --chocolate: #4A3226;
@@ -29,8 +36,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 700;
+  font-family: 'Bakerie', Georgia, serif;
+  font-weight: 600;
   line-height: 1.2;
 }
 

@@ -8,7 +8,7 @@ disciplina de Programação Web I (UFAL Penedo).
 A doceria vende brigadeiros gourmet artesanais por encomenda e atende exclusivamente pelo
 WhatsApp e pelo Instagram. Não existe endereço físico nem vitrine: cada cliente que chega
 precisa que o cardápio, os sabores e os preços sejam repetidos na conversa, o que consome
-tempo da responsável e atrasa a resposta. Quem está decidindo entre duas docerias
+tempo da responsável e atrasa a resposta. Quem está fazendo cotação entre duas docerias
 normalmente desiste antes de esperar.
 
 O site reúne produtos, sabores e preços num endereço único e público. O cliente chega à
@@ -33,23 +33,25 @@ não sobre apresentar o cardápio.
 
 ```
 public/
-  index.html            página que recebe a aplicação React
+  index.html                 página que recebe a aplicação React
 src/
-  index.js              conecta a aplicação ao navegador
-  App.js                monta a página na ordem das seções
-  App.css               cores, fontes e estilos compartilhados
+  index.js                   conecta a aplicação ao navegador
+  App.js                     monta a página na ordem das seções
+  App.css                    cores, fontes e estilos compartilhados
   data/
-    contato.js          telefone, e-mail e redes da doceria
+    contato.js               telefone, e-mail e redes da doceria
+  fonts/
+    bakerie-regular.woff2    fonte idêntica à da logo importada localmente
   components/
-    Cabecalho.js        logo, nome e menu
-    Menu.js             navegação por âncoras
-    Destaque.js         chamada principal
-    Sobre.js            a doceria e como encomendar
-    Cardapio.js         monta a lista de produtos
-    Doce.js             cartão de um produto, recebe os dados por props
-    Encomenda.js        formulário e tabela de preços
-    Rodape.js           contatos e redes
-  images/              fotos dos produtos e logotipo
+    Cabecalho.js             logo, nome e menu
+    Menu.js                  navegação por âncoras
+    Destaque.js              chamada principal
+    Sobre.js                 a doceria e como encomendar
+    Cardapio.js              monta a lista de produtos
+    Doce.js                  cartão de um produto, recebe os dados por props
+    Encomenda.js             formulário e tabela de preços
+    Rodape.js                contatos e redes
+  images/                    fotos dos produtos e logotipo
 ```
 
 Cada componente tem um arquivo `.css` com o mesmo nome, que contém apenas os estilos
