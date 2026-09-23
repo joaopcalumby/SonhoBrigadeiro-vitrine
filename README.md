@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Sonho de Brigadeiro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Vitrine web da doceria gourmet **Sonho de Brigadeiro**, desenvolvida como projeto da
+disciplina de Programação Web I (UFAL Penedo).
 
-## Available Scripts
+## O problema
 
-In the project directory, you can run:
+A doceria vende brigadeiros gourmet artesanais por encomenda e atende exclusivamente pelo
+WhatsApp e pelo Instagram. Não existe endereço físico nem vitrine: cada cliente que chega
+precisa que o cardápio, os sabores e os preços sejam repetidos na conversa, o que consome
+tempo da responsável e atrasa a resposta. Quem está decidindo entre duas docerias
+normalmente desiste antes de esperar.
 
-### `npm start`
+O site reúne produtos, sabores e preços num endereço único e público. O cliente chega à
+conversa já sabendo o que quer pedir, e a conversa passa a ser sobre fechar a encomenda,
+não sobre apresentar o cardápio.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## O que o site tem
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Apresentação da doceria e explicação de como encomendar
+- Cardápio com os cinco produtos, seus sabores e seus preços
+- Formulário de encomenda e tabela de resumo de preços
+- Contato direto por WhatsApp, e-mail e Instagram
+- Layout responsivo para celular, tablet e computador
 
-### `npm test`
+## Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React 19 (Create React App)
+- HTML5 semântico
+- CSS3 com Flexbox e media queries
 
-### `npm run build`
+## Estrutura do projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+public/
+  index.html            página que recebe a aplicação React
+src/
+  index.js              conecta a aplicação ao navegador
+  App.js                monta a página na ordem das seções
+  App.css               cores, fontes e estilos compartilhados
+  data/
+    contato.js          telefone, e-mail e redes da doceria
+  components/
+    Cabecalho.js        logo, nome e menu
+    Menu.js             navegação por âncoras
+    Destaque.js         chamada principal
+    Sobre.js            a doceria e como encomendar
+    Cardapio.js         monta a lista de produtos
+    Doce.js             cartão de um produto, recebe os dados por props
+    Encomenda.js        formulário e tabela de preços
+    Rodape.js           contatos e redes
+  images/              fotos dos produtos e logotipo
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Cada componente tem um arquivo `.css` com o mesmo nome, que contém apenas os estilos
+daquela parte da página.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como executar
 
-### `npm run eject`
+Pré-requisitos: [Node.js](https://nodejs.org) instalado.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone <url-do-repositorio>
+cd vitrine-doces
+npm install
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A aplicação abre em `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para gerar a versão de produção:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+## Autor
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+João Pedro Silva Calumby Pereira — Sistemas de Informação, UFAL Penedo.
+Disciplina de Programação Web I, professor Gustavo Miranda.
