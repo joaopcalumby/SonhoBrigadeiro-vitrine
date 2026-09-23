@@ -12,12 +12,6 @@ function Sobre() {
           {RESPONSAVEL}. Não trabalhamos com vitrine pronta: cada pedido é produzido depois
           de encomendado, com os sabores e a quantidade combinados com o cliente.
         </p>
-        <p className="sobre-texto">
-          Hoje o atendimento acontece pelo WhatsApp e pelo Instagram, onde o cardápio
-          precisa ser repetido a cada conversa. Esta página reúne os produtos, os sabores e
-          os preços num endereço só, para que o cliente chegue à conversa já sabendo o que
-          quer pedir.
-        </p>
         <h3 className="sobre-subtitulo">Como encomendar</h3>
         <ol className="sobre-passos">
           <li>Escolha os produtos e os sabores no cardápio abaixo.</li>
