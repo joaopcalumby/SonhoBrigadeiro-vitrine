@@ -3,6 +3,8 @@
 Vitrine web da doceria gourmet **Sonho de Brigadeiro**, desenvolvida como projeto da
 disciplina de Programação Web I (UFAL Penedo).
 
+**O protótipo em produção pode ser conferido também pelo deploy na Vercel em:** [sonhobrigadeiro-vitrine.vercel.app](https://sonhobrigadeiro-vitrine.vercel.app/)
+
 ## O problema
 
 A doceria vende brigadeiros gourmet artesanais por encomenda e atende exclusivamente pelo
@@ -78,5 +80,5 @@ npm run build
 
 ## Autor
 
-João Pedro Silva Calumby Pereira — Sistemas de Informação, UFAL Penedo.
+João Pedro Silva Calumby Pereira - Sistemas de Informação, UFAL Penedo.
 Disciplina de Programação Web I, professor Gustavo Miranda.
