@@ -1,0 +1,40 @@
+.sobre-conteudo {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: var(--creme);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.sobre-texto {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.sobre-texto strong {
+  font-weight: 600;
+  color: var(--marrom);
+}
+
+.sobre-subtitulo {
+  font-size: 22px;
+  margin: 28px 0 12px 0;
+}
+
+.sobre-passos {
+  padding-left: 22px;
+}
+
+.sobre-passos li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .sobre-conteudo {
+    padding: 24px;
+  }
+
+  .sobre-texto {
+    font-size: 16px;
+  }
+}

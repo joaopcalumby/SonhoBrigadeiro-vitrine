@@ -1,0 +1,52 @@
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--creme-fundo);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--creme-verde);
+}
+
+.cabecalho-marca {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+/* .cabecalho-logo {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+  border-radius: 50%;
+} */
+
+.cabecalho-nome {
+  font-size: 24px;
+  color: var(--chocolate);
+}
+
+.cabecalho-assinatura {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--marrom);
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cabecalho-nome {
+    font-size: 20px;
+  }
+}

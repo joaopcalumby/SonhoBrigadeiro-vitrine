@@ -1,0 +1,54 @@
+.doce {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: var(--creme);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.doce-imagem {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  transition: opacity 0.2s;
+}
+
+.doce:hover .doce-imagem {
+  opacity: 0.85;
+}
+
+.doce-corpo {
+  padding: 22px;
+}
+
+.doce-nome {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.doce-descricao {
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.doce-preco {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--marrom);
+  margin-bottom: 10px;
+}
+
+.doce-sabores {
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 12px;
+  border-top: 1px solid var(--creme-verde);
+}
+
+@media (max-width: 768px) {
+  .doce {
+    width: 100%;
+    max-width: 360px;
+  }
+}

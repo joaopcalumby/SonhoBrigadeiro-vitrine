@@ -1,0 +1,47 @@
+.destaque {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.destaque-texto {
+  flex: 1;
+}
+
+.destaque-titulo {
+  font-size: 44px;
+  color: var(--chocolate);
+  margin-bottom: 16px;
+}
+
+.destaque-frase {
+  font-size: 17px;
+  margin-bottom: 28px;
+  max-width: 460px;
+}
+
+.destaque-imagem {
+  flex: 1;
+  width: 100%;
+  max-width: 480px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .destaque {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .destaque-titulo {
+    font-size: 30px;
+  }
+
+  .destaque-imagem {
+    height: 260px;
+  }
+}

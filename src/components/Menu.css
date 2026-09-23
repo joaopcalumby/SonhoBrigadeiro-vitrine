@@ -1,0 +1,30 @@
+.menu-lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.menu-link {
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--chocolate);
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.menu-link:hover {
+  color: var(--marrom);
+  border-bottom-color: var(--rosa);
+}
+
+@media (max-width: 768px) {
+  .menu-lista {
+    gap: 18px;
+  }
+}
