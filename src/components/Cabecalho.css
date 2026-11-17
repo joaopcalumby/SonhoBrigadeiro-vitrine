@@ -2,51 +2,35 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: var(--creme-fundo);
+  background-color: var(--creme);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--creme-verde);
+  gap: 12px 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--caramelo);
 }
 
 .cabecalho-marca {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 14px;
 }
 
-/* .cabecalho-logo {
-  width: 62px;
-  height: 62px;
-  object-fit: cover;
-  border-radius: 50%;
-} */
-
-.cabecalho-nome {
-  font-size: 24px;
-  color: var(--chocolate);
-}
-
-.cabecalho-assinatura {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--marrom);
+.cabecalho-logo {
+  display: block;
+  width: 250px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
   .cabecalho {
     flex-direction: column;
     justify-content: center;
+    padding: 6px 0 12px 0;
   }
 
-  .cabecalho-nome {
-    font-size: 20px;
+  .cabecalho-logo {
+    width: 210px;
   }
 }

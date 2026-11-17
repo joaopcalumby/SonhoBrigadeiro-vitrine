@@ -1,7 +1,7 @@
 .sobre-conteudo {
   max-width: 760px;
   margin: 0 auto;
-  background-color: var(--creme);
+  background-color: var(--creme-claro);
   border-radius: 12px;
   padding: 40px;
 }
@@ -12,8 +12,7 @@
 }
 
 .sobre-texto strong {
-  font-weight: 600;
-  color: var(--marrom);
+  font-weight: 700;
 }
 
 .sobre-subtitulo {

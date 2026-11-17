@@ -1,18 +1,17 @@
 import './Cabecalho.css';
+import { Link } from 'react-router-dom';
 import Menu from './Menu';
-// import logo from '../images/logo.png';
+import logo from '../images/assinatura-horizontal.svg';
 import { NOME_DA_LOJA } from '../data/contato';
 
 function Cabecalho() {
   return (
     <header className="cabecalho">
-      <div className="cabecalho-marca">
-        {/* <img className="cabecalho-logo" src={logo} alt="Logotipo da doceria Sonho de Brigadeiro" /> */}
-        <div>
-          <h1 className="cabecalho-nome">{NOME_DA_LOJA}</h1>
-          <p className="cabecalho-assinatura">Doceria gourmet</p>
-        </div>
-      </div>
+      <h1 className="cabecalho-marca">
+        <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+          <img className="cabecalho-logo" src={logo} alt={NOME_DA_LOJA} />
+        </Link>
+      </h1>
       <Menu />
     </header>
   );
