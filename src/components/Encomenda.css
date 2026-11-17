@@ -1,15 +1,7 @@
-.encomenda-conteudo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-}
-
 .encomenda-formulario {
   flex: 1;
   max-width: 480px;
-  background-color: var(--creme);
+  background-color: var(--creme-claro);
   border-radius: 12px;
   padding: 32px;
 }
@@ -20,9 +12,10 @@
 }
 
 .encomenda-legenda {
-  font-family: 'Bakerie', Georgia, serif;
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   margin-bottom: 12px;
 }
 
@@ -39,63 +32,52 @@
   font-family: inherit;
   font-size: 15px;
   color: var(--chocolate);
-  background-color: var(--creme-fundo);
-  border: 1px solid var(--creme-verde);
+  background-color: var(--branco);
+  border: 1px solid var(--caramelo);
   border-radius: 6px;
   padding: 10px 12px;
   margin-bottom: 14px;
 }
 
-.encomenda-campo:focus {
-  outline: 2px solid var(--rosa);
+.encomenda-total {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
-.encomenda-aviso {
+.encomenda-alerta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  border-left: 4px solid var(--rosa);
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+
+.encomenda-observacao {
   font-size: 13px;
   margin-top: 16px;
 }
 
-.encomenda-tabela-area {
-  flex: 1;
-  max-width: 460px;
+.encomenda-sucesso {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.encomenda-sucesso-icone {
+  font-size: 36px;
 }
 
 .encomenda-subtitulo {
   font-size: 22px;
-  margin-bottom: 16px;
-}
-
-.encomenda-tabela {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 15px;
-}
-
-.encomenda-tabela th {
-  background-color: var(--marrom);
-  color: var(--creme);
-  font-weight: 600;
-  text-align: left;
-  padding: 12px;
-}
-
-.encomenda-tabela td {
-  border-bottom: 1px solid var(--creme-verde);
-  padding: 12px;
-}
-
-.encomenda-tabela tfoot td {
-  font-size: 13px;
-  border-bottom: none;
 }
 
 @media (max-width: 768px) {
-  .encomenda-conteudo {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .encomenda-formulario {
+    max-width: none;
     padding: 22px;
   }
 }

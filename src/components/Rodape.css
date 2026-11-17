@@ -2,39 +2,52 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 32px;
-  background-color: var(--marrom);
+  background-color: var(--chocolate);
   color: var(--creme);
   border-radius: 12px 12px 0 0;
   padding: 40px;
   margin-top: 32px;
 }
 
+.rodape-carimbo {
+  width: 130px;
+  height: 130px;
+}
+
 .rodape-bloco {
   flex: 1;
-  min-width: 220px;
+  min-width: 200px;
 }
 
 .rodape-titulo {
-  font-size: 19px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   color: var(--creme);
   margin-bottom: 10px;
 }
 
 .rodape-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--creme);
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
 
 .rodape-link:hover {
-  border-bottom-color: var(--creme-verde);
+  border-bottom-color: var(--rosa);
 }
 
 @media (max-width: 768px) {
   .rodape {
     flex-direction: column;
+    align-items: flex-start;
     padding: 28px;
   }
 }
